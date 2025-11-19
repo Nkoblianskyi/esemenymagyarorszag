@@ -8,15 +8,14 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Partnereink | Esemény Magyarország - Megbízható jegyvizsgálók',
-  description: 'Fedezze fel ellenőrzött partner platformjainkat a jegyvásárláshoz Magyarországon: Jegy.hu, Interticket, TicketExpress, Eventim HU és még sok más.',
+  description: 'Fedezze fel ellenőrzött partner platformjainkat a jegyvásárláshoz Magyarországon: Jegy.hu, Eventim HU, Tixa, Jegymester és TicketPortal.',
   keywords: [
     'jegy partnerek magyarország',
     'jegy.hu',
-    'interticket',
-    'ticketexpress',
     'eventim magyarország',
     'tixa',
     'jegymester',
+    'ticketportal',
     'engedélyezett viszonteladók',
   ],
 }
@@ -38,35 +37,7 @@ const partners = [
   },
   {
     id: 2,
-    name: 'Interticket',
-    logo: '/interticket-logo.jpg',
-    description: 'Magyarország legnagyobb jegyirodai hálózata élő üzletekkel és online értékesítéssel. Megbízható szolgáltatás kulturális és sportesemények jegyeihez.',
-    website: 'https://interticket.hu',
-    founded: 1990,
-    headquarters: 'Budapest, Magyarország',
-    rating: 4.6,
-    features: ['Országos lefedettség', 'Élő kasszák', 'Online értékesítés', 'Print@Home', 'Csoportos kedvezmények'],
-    countries: 1,
-    verified: true,
-    monthlyUsers: '1.8M+'
-  },
-  {
-    id: 3,
-    name: 'TicketExpress',
-    logo: '/ticketexpress-logo.jpg',
-    description: 'Prémium jegyértékesítő szolgáltatás Magyarországon és Közép-Európában. Kiváló ügyfélszolgálat és széles rendezvényválaszték jellemzi.',
-    website: 'https://ticketexpress.hu',
-    founded: 2001,
-    headquarters: 'Budapest, Magyarország',
-    rating: 4.5,
-    features: ['VIP jegyek', 'Expressz szállítás', 'Rugalmas fizetés', 'Megbízható értékesítő', 'Helyszíni átvétel'],
-    countries: 3,
-    verified: true,
-    monthlyUsers: '850K+'
-  },
-  {
-    id: 4,
-    name: 'Eventim HU',
+    name: 'Eventim Magyarország',
     logo: '/eventim-hu-logo.jpg',
     description: 'Az európai Eventim csoport magyar leányvállalata. Nemzetközi szabványok és helyi ismeret kombinációja garantálja a kiváló szolgáltatást.',
     website: 'https://eventim.hu',
@@ -79,7 +50,7 @@ const partners = [
     monthlyUsers: '1.2M+'
   },
   {
-    id: 5,
+    id: 3,
     name: 'Tixa',
     logo: '/tixa-logo.jpg',
     description: 'Modern online jegyplatform innovatív funkcionalitással. Különösen népszerű zenei és kulturális eseményeknél, egyszerű használattal.',
@@ -93,7 +64,7 @@ const partners = [
     monthlyUsers: '650K+'
   },
   {
-    id: 6,
+    id: 4,
     name: 'Jegymester',
     logo: '/jegymester-logo.jpg',
     description: 'Megbízható magyar jegyplatform kiemelt fókusszal a színházi és zenei előadásokra. Kiváló ügyfélélmény és átlátható árazás.',
@@ -107,32 +78,18 @@ const partners = [
     monthlyUsers: '580K+'
   },
   {
-    id: 7,
-    name: 'StubHub',
-    logo: '/stubhub-logo.jpg',
-    description: 'Nemzetközi másodlagos jegypiac FanProtect garanciával. Magyar események széles választéka világszínvonalú vásárlóvédelemmel.',
-    website: 'https://stubhub.hu',
-    founded: 2000,
-    headquarters: 'San Francisco, USA',
-    rating: 4.4,
-    features: ['FanProtect™', 'Szállítási garancia', 'E-jegyek', 'Mobil app', 'Árátláthatóság'],
-    countries: 40,
+    id: 5,
+    name: 'TicketPortal',
+    logo: '/ticketportal-logo.jpg',
+    description: 'Etablált jegyplatform Magyarországon és régióban nagy eseményválasztékkal. Kiváló megbízhatóság és gyors kiszállítás jellemzi.',
+    website: 'https://www.ticketportal.hu',
+    founded: 2009,
+    headquarters: 'Budapest, Magyarország',
+    rating: 4.5,
+    features: ['Régióban etablált', 'Széles választék', 'Print@Home', 'SMS értesítés', 'Élő támogatás'],
+    countries: 2,
     verified: true,
-    monthlyUsers: '18M+'
-  },
-  {
-    id: 8,
-    name: 'Viagogo',
-    logo: '/viagogo-logo.jpg',
-    description: 'Globális eseményjegy piactér vásárlói garanciával. Magyar események nemzetközi szinten 100%-os szállítási garanciával.',
-    website: 'https://viagogo.hu',
-    founded: 2006,
-    headquarters: 'Genf, Svájc',
-    rating: 4.3,
-    features: ['Világméretű lefedettség', '100% szállítási garancia', 'Több deviza', 'Biztonságos fizetés', 'Vásárlóvédelem'],
-    countries: 160,
-    verified: true,
-    monthlyUsers: '20M+'
+    monthlyUsers: '720K+'
   },
 ]
 
