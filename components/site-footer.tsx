@@ -85,11 +85,6 @@ export function SiteFooter() {
                   Cookie szabályzat
                 </Link>
               </li>
-              <li>
-                <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors font-medium hover:translate-x-1 inline-block">
-                  Általános szerződési feltételek
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
