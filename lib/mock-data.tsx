@@ -677,9 +677,9 @@ export const mockOffers: Record<number, TicketOffer[]> = {
       lastUpdated: new Date().toISOString(),
     },
     {
-      id: 'offer-1-9',
+      id: 'offer-1-8',
       eventId: 1,
-      partner: mockPartners[8], // TicketsForLess
+      partner: mockPartners[7], // TicketsForLess (moved from index 8 to 7)
       section: 'VIP',
       row: '5. sor',
       quantity: 2,
