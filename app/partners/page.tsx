@@ -8,15 +8,15 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Partnereink | Esemény Magyarország - Megbízható jegyvizsgálók',
-  description: 'Fedezze fel ellenőrzött partner platformjainkat a jegyvásárláshoz Magyarországon: Jegy.hu, Eventim HU, Tixa, Jegymester és TicketPortal.',
+  description: 'Fedezze fel ellenőrzött partner platformjainkat a jegyvásárláshoz: magyar és nemzetközi operátorok.',
   keywords: [
     'jegy partnerek magyarország',
     'jegy.hu',
     'eventim magyarország',
-    'tixa',
-    'jegymester',
-    'ticketportal',
-    'engedélyezett viszonteladók',
+    'stubhub',
+    'viagogo',
+    'interticket',
+    'ticketsforless',
   ],
 }
 
@@ -24,7 +24,7 @@ const partners = [
   {
     id: 1,
     name: 'Jegy.hu',
-    logo: '/jegy-hu-logo.jpg',
+    logo: '/jegy.png',
     description: 'Magyarország egyik vezető online jegyértékesítő platformja több mint 15 éves tapasztalattal. Koncertek, színházi előadások, sportesemények széles választéka.',
     website: 'https://jegy.hu',
     founded: 2007,
@@ -38,7 +38,7 @@ const partners = [
   {
     id: 2,
     name: 'Eventim Magyarország',
-    logo: '/eventim-hu-logo.jpg',
+    logo: '/eventim.svg',
     description: 'Az európai Eventim csoport magyar leányvállalata. Nemzetközi szabványok és helyi ismeret kombinációja garantálja a kiváló szolgáltatást.',
     website: 'https://eventim.hu',
     founded: 2015,
@@ -52,7 +52,7 @@ const partners = [
   {
     id: 3,
     name: 'Tixa',
-    logo: '/tixa-logo.jpg',
+    logo: '/ff1c3722-2648-473e-8bb5-8d683a8e1d89.jpeg',
     description: 'Modern online jegyplatform innovatív funkcionalitással. Különösen népszerű zenei és kulturális eseményeknél, egyszerű használattal.',
     website: 'https://tixa.hu',
     founded: 2018,
@@ -66,7 +66,7 @@ const partners = [
   {
     id: 4,
     name: 'Jegymester',
-    logo: '/jegymester-logo.jpg',
+    logo: '/jmhu-white.png',
     description: 'Megbízható magyar jegyplatform kiemelt fókusszal a színházi és zenei előadásokra. Kiváló ügyfélélmény és átlátható árazás.',
     website: 'https://jegymester.hu',
     founded: 2012,
@@ -80,7 +80,7 @@ const partners = [
   {
     id: 5,
     name: 'TicketPortal',
-    logo: '/ticketportal-logo.jpg',
+    logo: '/logo-ticketportal.svg',
     description: 'Etablált jegyplatform Magyarországon és régióban nagy eseményválasztékkal. Kiváló megbízhatóság és gyors kiszállítás jellemzi.',
     website: 'https://www.ticketportal.hu',
     founded: 2009,
@@ -90,6 +90,48 @@ const partners = [
     countries: 2,
     verified: true,
     monthlyUsers: '720K+'
+  },
+  {
+    id: 6,
+    name: 'StubHub',
+    logo: '/stubhub-purple-logo-light-theme.svg',
+    description: 'Globális jegy-marketplace világszerte több mint 195 országban. Vezető platform sporteseményekhez és koncertekhez nemzetközi szinten.',
+    website: 'https://stubhub.com/',
+    founded: 2000,
+    headquarters: 'San Francisco, USA',
+    rating: 4.3,
+    features: ['Globális piac', 'FanProtect garancia', '100% vásárlóvédelem', 'Nemzetközi események', 'Mobil app'],
+    countries: 195,
+    verified: true,
+    monthlyUsers: '15M+'
+  },
+  {
+    id: 7,
+    name: 'Viagogo',
+    logo: '/viagogo_logo_fb.png',
+    description: 'Nemzetközi jegyplatform világszerte eladókkal és vevőkkel. Széles választék sporteseményekhez, koncertekhez és színházi előadásokhoz.',
+    website: 'https://www.viagogo.com/',
+    founded: 2006,
+    headquarters: 'London, UK',
+    rating: 4.2,
+    features: ['Nemzetközi fedés', 'Jegygarancia', 'Többnyelvű támogatás', 'Biztonságos fizetés', '70+ ország'],
+    countries: 70,
+    verified: true,
+    monthlyUsers: '12M+'
+  },
+  {
+    id: 9,
+    name: 'TicketsForLess',
+    logo: '/tfl-logo-sized.svg',
+    description: 'Prémium jegy viszonteladó kiemelkedő szolgáltatással. Specializáció nagy koncertekre, sporteseményekre és VIP élményekre.',
+    website: 'https://www.ticketsforless.com/',
+    founded: 2001,
+    headquarters: 'Los Angeles, USA',
+    rating: 4.5,
+    features: ['Prémium szolgáltatás', 'VIP jegyek', 'Kiváló ügyfélszolgálat', 'Nagy események', 'Személyes tanácsadás'],
+    countries: 50,
+    verified: true,
+    monthlyUsers: '2.2M+'
   },
 ]
 
@@ -110,15 +152,15 @@ export default function PartnersPage() {
               Megbízható Partnereink
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 text-balance max-w-2xl mx-auto leading-relaxed font-medium">
-              Kizárólag ellenőrzött, bevizsgált jegyviszonteladókkal dolgozunk együtt, 
+              Kizárólag ellenőrzött, bevizsgált jegyviszonteladókkal dolgozunk együtt - magyar és nemzetközi operátorok -
               hogy garantálhassuk a legjobb árakat és a maximális biztonságot
             </p>
-            
+
             <Alert className="text-left border-2 border-secondary bg-card text-card-foreground max-w-2xl mx-auto shadow-lg">
               <Info className="h-5 w-5 text-secondary" />
               <AlertDescription className="text-sm leading-relaxed">
-                <strong className="text-secondary font-bold">Fontos tudnivaló:</strong> Az esemenymagyarorszag.com egy árösszehasonlító platform. 
-                Nem értékesítünk közvetlenül jegyeket. Az "Ajánlat megtekintése" gombra kattintva átirányítjuk 
+                <strong className="text-secondary font-bold">Fontos tudnivaló:</strong> Az esemenymagyarorszag.com egy árösszehasonlító platform.
+                Nem értékesítünk közvetlenül jegyeket. Az "Ajánlat megtekintése" gombra kattintva átirányítjuk
                 Önt a kiválasztott partner viszonteladó weboldalára, ahol biztonságosan véglegesítheti vásárlását.
               </AlertDescription>
             </Alert>
@@ -171,7 +213,7 @@ export default function PartnersPage() {
           <p className="text-muted-foreground mb-10 text-lg font-medium">
             Minden partnert gondosan ellenőriztünk és teljesíti a biztonság és megbízhatóság magas követelményeit
           </p>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {partners.map((partner) => (
               <Card key={partner.id} className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-border hover:border-primary bg-card">
@@ -191,7 +233,7 @@ export default function PartnersPage() {
                       <span className="font-black text-lg">{partner.rating}</span>
                     </div>
                   </div>
-                  
+
                   <p className="text-muted-foreground leading-relaxed font-medium">
                     {partner.description}
                   </p>
@@ -270,12 +312,12 @@ export default function PartnersPage() {
                 <div>
                   <h4 className="font-black mb-2 text-lg">Valós idejű adatgyűjtés</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                    Folyamatosan gyűjtjük az aktuális ár- és elérhetőségi adatokat minden partner platformról, 
+                    Folyamatosan gyűjtjük az aktuális ár- és elérhetőségi adatokat minden partner platformról,
                     hogy mindig a legfrissebb ajánlatokat mutathassuk be.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex gap-4">
                 <div className="h-12 w-12 rounded-lg bg-accent text-accent-foreground flex items-center justify-center font-black text-xl shrink-0">
                   2
@@ -283,12 +325,12 @@ export default function PartnersPage() {
                 <div>
                   <h4 className="font-black mb-2 text-lg">Átlátható árösszehasonlítás</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                    Minden ajánlat áttekinthetően megjelenítve névértékkel (face value), 
+                    Minden ajánlat áttekinthetően megjelenítve névértékkel (face value),
                     szolgáltatási díjakkal és teljes árral a maximális átláthatóság érdekében.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex gap-4">
                 <div className="h-12 w-12 rounded-lg bg-secondary text-secondary-foreground flex items-center justify-center font-black text-xl shrink-0">
                   3
@@ -296,12 +338,12 @@ export default function PartnersPage() {
                 <div>
                   <h4 className="font-black mb-2 text-lg">Biztonságos átirányítás partnerhez</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                    Az ajánlat kiválasztásánál közvetlenül a partner biztonságos weboldalára irányítjuk. 
+                    Az ajánlat kiválasztásánál közvetlenül a partner biztonságos weboldalára irányítjuk.
                     A vásárlás az ő általános szerződési feltételeik és vásárlóvédelmük alapján történik.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex gap-4">
                 <div className="h-12 w-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-black text-xl shrink-0">
                   4
@@ -309,7 +351,7 @@ export default function PartnersPage() {
                 <div>
                   <h4 className="font-black mb-2 text-lg">Ingyenes szolgáltatás</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                    Az összehasonlító szolgáltatásunk teljesen ingyenes. Pontosan a partnernél 
+                    Az összehasonlító szolgáltatásunk teljesen ingyenes. Pontosan a partnernél
                     megjelenített árat fizeti - nincs rejtett felár vagy díj tőlünk.
                   </p>
                 </div>
@@ -323,7 +365,7 @@ export default function PartnersPage() {
           <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto font-medium">
             Minden partner szigorú ellenőrzési folyamaton megy keresztül és teljesíti magas biztonsági követelményeinket
           </p>
-          
+
           <div className="grid sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="border-2 border-border hover:border-primary hover:shadow-xl transition-all bg-card">
               <CardContent className="pt-8 pb-6">
@@ -332,12 +374,12 @@ export default function PartnersPage() {
                 </div>
                 <h4 className="font-black text-xl mb-3">Szigorú ellenőrzés</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                  Csak bevált platformokkal dolgozunk hosszú múlttal, 
+                  Csak bevált platformokkal dolgozunk hosszú múlttal,
                   ellenőrzött hírnévvel és pozitív vásárlói értékelésekkel.
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-2 border-border hover:border-accent hover:shadow-xl transition-all bg-card">
               <CardContent className="pt-8 pb-6">
                 <div className="h-16 w-16 rounded-lg bg-accent/10 flex items-center justify-center mx-auto mb-5">
@@ -345,12 +387,12 @@ export default function PartnersPage() {
                 </div>
                 <h4 className="font-black text-xl mb-3">Átfogó vásárlóvédelem</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                  Minden partner erős vásárlói garanciákat, szállítási garanciát és teljes 
+                  Minden partner erős vásárlói garanciákat, szállítási garanciát és teljes
                   védelmet biztosít minden jegyvásárlási tranzakcióhoz.
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-2 border-border hover:border-secondary hover:shadow-xl transition-all bg-card">
               <CardContent className="pt-8 pb-6">
                 <div className="h-16 w-16 rounded-lg bg-secondary/10 flex items-center justify-center mx-auto mb-5">
@@ -358,7 +400,7 @@ export default function PartnersPage() {
                 </div>
                 <h4 className="font-black text-xl mb-3">Kiváló hírnév</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                  Milliónyi sikeres tranzakció világszerte és következetesen pozitív 
+                  Milliónyi sikeres tranzakció világszerte és következetesen pozitív
                   vásárlói értékelések igazolják partnereink megbízhatóságát.
                 </p>
               </CardContent>

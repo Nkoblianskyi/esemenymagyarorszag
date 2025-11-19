@@ -1,6 +1,6 @@
 import { Event, TicketOffer, Partner } from './types'
 
-// Mock Partners Data - Hungarian Partners
+// Mock Partners Data - Hungarian + International Partners
 export const mockPartners: Partner[] = [
   {
     id: 'jegy-hu',
@@ -57,7 +57,7 @@ export const mockPartners: Partner[] = [
   {
     id: 'ticketportal',
     name: 'TicketPortal',
-    logo: '/logo-ticketportal-2023-blue.svg',
+    logo: '/logo-ticketportal.svg',
     description: 'Magyarországi és nemzetközi események jegyértékesítője.',
     website: 'https://www.ticketportal.hu',
     founded: 2001,
@@ -67,8 +67,46 @@ export const mockPartners: Partner[] = [
     countries: 3,
     verified: true,
   },
+  {
+    id: 'stubhub',
+    name: 'StubHub',
+    logo: '/stubhub-purple-logo-light-theme.svg',
+    description: 'Globális jegy-marketplace világszerte több mint 195 országban.',
+    website: 'https://stubhub.com/',
+    founded: 2000,
+    headquarters: 'San Francisco, USA',
+    rating: 4.3,
+    features: ['Globális piac', 'FanProtect garancia', '100% vásárlóvédelem', 'Nemzetközi események'],
+    countries: 195,
+    verified: true,
+  },
+  {
+    id: 'viagogo',
+    name: 'Viagogo',
+    logo: '/viagogo_logo_fb.png',
+    description: 'Nemzetközi jegyplatform világszerte eladókkal és vevőkkel.',
+    website: 'https://www.viagogo.com/',
+    founded: 2006,
+    headquarters: 'London, UK',
+    rating: 4.2,
+    features: ['Nemzetközi fedés', 'Jegygarancia', 'Többnyelvű támogatás', 'Biztonságos fizetés'],
+    countries: 70,
+    verified: true,
+  },
+  {
+    id: 'ticketsforless',
+    name: 'TicketsForLess',
+    logo: '/tfl-logo-sized.svg',
+    description: 'Prémium jegy viszonteladó kiemelkedő szolgáltatással.',
+    website: 'https://www.ticketsforless.com/',
+    founded: 2001,
+    headquarters: 'Los Angeles, USA',
+    rating: 4.5,
+    features: ['Prémium szolgáltatás', 'VIP jegyek', 'Kiváló ügyfélszolgálat', 'Nagy események'],
+    countries: 50,
+    verified: true,
+  },
 ]
-// </CHANGE>
 
 export const mockEvents: Event[] = [
   // KONCERTEK (10 events)
@@ -276,9 +314,9 @@ export const mockEvents: Event[] = [
     venue: 'Hidegkuti Nándor Stadion',
     city: 'Budapest',
     address: 'Salgótarjáni út 12-14, 1087 Budapest',
-    date: '2025-08-16',
-    time: '19:30',
-    doors: '17:30',
+    date: '2025-10-25',
+    time: '16:00',
+    doors: '14:00',
     image: '/mtk-budapest-football-stadium-match-blue-white-hun.jpg',
     description: 'MTK Budapest hazai meccse a Hidegkuti Stadionban. Klasszikus NB I összecsapás.',
     faceValue: 3500,
@@ -291,9 +329,9 @@ export const mockEvents: Event[] = [
     venue: 'Nagyerdei Stadion',
     city: 'Debrecen',
     address: 'Oláh Gábor u. 5, 4032 Debrecen',
-    date: '2025-10-25',
-    time: '16:00',
-    doors: '14:00',
+    date: '2025-11-15',
+    time: '20:45',
+    doors: '18:30',
     image: '/debrecen-football-stadium-nagyerdei-hungarian-leag.jpg',
     description: 'Vidéki rangadó! A Debrecen hazai pályán fogadja a Ferencvárost. Telt ház várható.',
     faceValue: 5500,
@@ -306,21 +344,6 @@ export const mockEvents: Event[] = [
     venue: 'Puskás Aréna',
     city: 'Budapest',
     address: 'Istvánmezei út 3-5, 1146 Budapest',
-    date: '2025-11-15',
-    time: '20:45',
-    doors: '18:30',
-    image: '/hungary-vs-serbia-football-match-puskas-arena-buda.jpg',
-    description: 'Nemzetek Ligája mérkőzés! Magyarország - Szerbia, a továbbjutásért folyó küzdelem.',
-    faceValue: 7500,
-    capacity: 67215,
-  },
-  {
-    id: 17,
-    name: 'Honvéd - Újpest: Budapesti derbi',
-    category: 'Sport',
-    venue: 'Bozsik Aréna',
-    city: 'Budapest',
-    address: 'Bozsik József Stadion, Üllői út 129, 1091 Budapest',
     date: '2025-09-28',
     time: '17:30',
     doors: '15:30',
@@ -330,7 +353,7 @@ export const mockEvents: Event[] = [
     capacity: 8200,
   },
   {
-    id: 18,
+    id: 17,
     name: 'Magyarország - Németország: Eb-selejtező',
     category: 'Sport',
     venue: 'Puskás Aréna',
@@ -347,7 +370,7 @@ export const mockEvents: Event[] = [
 
   // SZÍNHÁZ & MUSICAL (6 events)
   {
-    id: 19,
+    id: 18,
     name: 'A Nyomorultak - Musical',
     category: 'Színház',
     venue: 'Madách Színház',
@@ -362,7 +385,7 @@ export const mockEvents: Event[] = [
     capacity: 1200,
   },
   {
-    id: 20,
+    id: 19,
     name: 'Macskák - Musical',
     category: 'Színház',
     venue: 'Madách Színház',
@@ -377,7 +400,7 @@ export const mockEvents: Event[] = [
     capacity: 1200,
   },
   {
-    id: 21,
+    id: 20,
     name: 'János Vitéz - Rockopera',
     category: 'Színház',
     venue: 'Erkel Színház',
@@ -392,7 +415,7 @@ export const mockEvents: Event[] = [
     capacity: 1837,
   },
   {
-    id: 22,
+    id: 21,
     name: 'István, a király - Rockopera',
     category: 'Színház',
     venue: 'Papp László Budapest Sportaréna',
@@ -407,7 +430,7 @@ export const mockEvents: Event[] = [
     capacity: 12500,
   },
   {
-    id: 23,
+    id: 22,
     name: 'Egy szerelem három éjszakája - Musical',
     category: 'Színház',
     venue: 'Operettszínház',
@@ -422,7 +445,7 @@ export const mockEvents: Event[] = [
     capacity: 999,
   },
   {
-    id: 24,
+    id: 23,
     name: 'A dzsungel könyve - Gyerek musical',
     category: 'Színház',
     venue: 'Madách Színház',
@@ -439,7 +462,7 @@ export const mockEvents: Event[] = [
 
   // STAND-UP & COMEDY (3 events)
   {
-    id: 25,
+    id: 24,
     name: 'Dombóvári István - Stand up',
     category: 'Komédia',
     venue: 'Akvárium Klub',
@@ -454,7 +477,7 @@ export const mockEvents: Event[] = [
     capacity: 1500,
   },
   {
-    id: 26,
+    id: 25,
     name: 'Szabó Balázs Bandája - Stand up show',
     category: 'Komédia',
     venue: 'MOM Kulturális Központ',
@@ -469,7 +492,7 @@ export const mockEvents: Event[] = [
     capacity: 450,
   },
   {
-    id: 27,
+    id: 26,
     name: 'Hadházi László - Aréna show',
     category: 'Komédia',
     venue: 'Papp László Budapest Sportaréna',
@@ -486,7 +509,7 @@ export const mockEvents: Event[] = [
 
   // FESZTIVÁLOK (3 events)
   {
-    id: 28,
+    id: 27,
     name: 'Sziget Fesztivál - 5 napos bérlet',
     category: 'Fesztivál',
     venue: 'Óbudai-sziget',
@@ -501,7 +524,7 @@ export const mockEvents: Event[] = [
     capacity: 95000,
   },
   {
-    id: 29,
+    id: 28,
     name: 'VOLT Fesztivál - Teljes bérlet',
     category: 'Fesztivál',
     venue: 'Lővér Kemping',
@@ -516,7 +539,7 @@ export const mockEvents: Event[] = [
     capacity: 30000,
   },
   {
-    id: 30,
+    id: 29,
     name: 'Balaton Sound - 5 napos bérlet',
     category: 'Fesztivál',
     venue: 'Zamárdi',
@@ -531,14 +554,13 @@ export const mockEvents: Event[] = [
     capacity: 25000,
   },
 ]
-// </CHANGE>
 
 export const mockOffers: Record<number, TicketOffer[]> = {
   1: [
     {
       id: 'offer-1-1',
       eventId: 1,
-      partner: mockPartners[0],
+      partner: mockPartners[0], // Jegy.hu
       section: 'Alsó szint',
       row: '25. sor',
       quantity: 2,
@@ -547,7 +569,7 @@ export const mockOffers: Record<number, TicketOffer[]> = {
       fees: 1840,
       currency: 'HUF',
       delivery: 'E-jegy',
-      url: 'https://jegy.hu/',
+      url: 'https://jegy.hu',
       rating: 4.7,
       verified: true,
       lastUpdated: new Date().toISOString(),
@@ -555,7 +577,7 @@ export const mockOffers: Record<number, TicketOffer[]> = {
     {
       id: 'offer-1-2',
       eventId: 1,
-      partner: mockPartners[1],
+      partner: mockPartners[1], // Eventim
       section: 'Alsó szint',
       row: '22. sor',
       quantity: 2,
@@ -564,7 +586,7 @@ export const mockOffers: Record<number, TicketOffer[]> = {
       fees: 1900,
       currency: 'HUF',
       delivery: 'E-jegy',
-      url: 'https://interticket.hu/',
+      url: 'https://eventim.hu',
       rating: 4.6,
       verified: true,
       lastUpdated: new Date().toISOString(),
@@ -572,7 +594,7 @@ export const mockOffers: Record<number, TicketOffer[]> = {
     {
       id: 'offer-1-3',
       eventId: 1,
-      partner: mockPartners[2],
+      partner: mockPartners[2], // Tixa
       section: 'Felső szint',
       row: '15. sor',
       quantity: 2,
@@ -581,7 +603,7 @@ export const mockOffers: Record<number, TicketOffer[]> = {
       fees: 2040,
       currency: 'HUF',
       delivery: 'E-jegy',
-      url: 'https://ticketexpress.hu/',
+      url: 'https://tixa.hu',
       rating: 4.5,
       verified: true,
       lastUpdated: new Date().toISOString(),
@@ -589,7 +611,7 @@ export const mockOffers: Record<number, TicketOffer[]> = {
     {
       id: 'offer-1-4',
       eventId: 1,
-      partner: mockPartners[3],
+      partner: mockPartners[3], // Jegymester
       section: 'Álló',
       row: 'Belső tér',
       quantity: 4,
@@ -598,15 +620,15 @@ export const mockOffers: Record<number, TicketOffer[]> = {
       fees: 3520,
       currency: 'HUF',
       delivery: 'E-jegy',
-      url: 'https://eventim.hu/',
-      rating: 4.6,
+      url: 'https://jegymester.hu',
+      rating: 4.4,
       verified: true,
       lastUpdated: new Date().toISOString(),
     },
     {
       id: 'offer-1-5',
       eventId: 1,
-      partner: mockPartners[4],
+      partner: mockPartners[4], // TicketPortal
       section: 'Alsó szint közép',
       row: '20. sor',
       quantity: 2,
@@ -615,8 +637,59 @@ export const mockOffers: Record<number, TicketOffer[]> = {
       fees: 1600,
       currency: 'HUF',
       delivery: 'E-jegy',
-      url: 'https://stubhub.hu/',
+      url: 'https://www.ticketportal.hu',
+      rating: 4.5,
+      verified: true,
+      lastUpdated: new Date().toISOString(),
+    },
+    {
+      id: 'offer-1-6',
+      eventId: 1,
+      partner: mockPartners[5], // StubHub
+      section: 'Álló',
+      row: 'Belső tér',
+      quantity: 4,
+      price: 10500,
+      totalPrice: 42000,
+      fees: 4200,
+      currency: 'HUF',
+      delivery: 'E-jegy',
+      url: 'https://stubhub.com',
       rating: 4.3,
+      verified: true,
+      lastUpdated: new Date().toISOString(),
+    },
+    {
+      id: 'offer-1-7',
+      eventId: 1,
+      partner: mockPartners[6], // Viagogo
+      section: 'Alsó szint közép',
+      row: '20. sor',
+      quantity: 2,
+      price: 11200,
+      totalPrice: 22400,
+      fees: 2240,
+      currency: 'HUF',
+      delivery: 'E-jegy',
+      url: 'https://www.viagogo.com',
+      rating: 4.2,
+      verified: true,
+      lastUpdated: new Date().toISOString(),
+    },
+    {
+      id: 'offer-1-9',
+      eventId: 1,
+      partner: mockPartners[8], // TicketsForLess
+      section: 'VIP',
+      row: '5. sor',
+      quantity: 2,
+      price: 20000,
+      totalPrice: 40000,
+      fees: 4000,
+      currency: 'HUF',
+      delivery: 'E-jegy',
+      url: 'https://www.ticketsforless.com',
+      rating: 4.5,
       verified: true,
       lastUpdated: new Date().toISOString(),
     },
