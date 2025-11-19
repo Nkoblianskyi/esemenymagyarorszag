@@ -265,11 +265,11 @@ export default function CookiesPage() {
                       Kapcsolati űrlap
                     </Badge>
                   </Link>
-                  <a href="mailto:info@esemenymagyarorszag.com">
+                  <p>
                     <Badge variant="outline" className="px-6 py-3 text-sm font-bold cursor-pointer hover:bg-muted border-2">
                       info@esemenymagyarorszag.com
                     </Badge>
-                  </a>
+                  </p>
                 </div>
               </CardContent>
             </Card>

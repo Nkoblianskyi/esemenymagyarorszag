@@ -397,9 +397,9 @@ export default function PrivacyPage() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="p-4 bg-background border-2 rounded-lg">
                     <p className="font-bold text-sm mb-1">E-mail:</p>
-                    <a href="mailto:info@esemenymagyarorszag.com" className="text-primary hover:underline font-semibold">
+                    <p className="text-primary hover:underline font-semibold">
                       info@esemenymagyarorszag.com
-                    </a>
+                    </p>
                   </div>
                   <div className="p-4 bg-background border-2 rounded-lg">
                     <p className="font-bold text-sm mb-1">Adatkezelő:</p>
